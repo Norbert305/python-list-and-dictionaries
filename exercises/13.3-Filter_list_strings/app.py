@@ -7,3 +7,15 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+
+def my_list(name):
+
+    if "am" in name:
+        
+        return name
+
+new_list = list(filter(my_list, names))
+
+print(new_list)
+
+    

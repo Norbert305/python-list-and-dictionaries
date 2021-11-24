@@ -2,3 +2,9 @@ my_list = [2323,4344,2325,324413,21234,24531,2123,42234,544,456,345,42,5445,23,5
 
 #Your code here:
 
+def find_average(my_list):
+    
+    for i in my_list:
+        
+        return sum(my_list)/len(my_list)
+print(find_average(my_list))
