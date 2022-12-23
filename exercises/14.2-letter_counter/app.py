@@ -2,23 +2,22 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 
 counts = {}
 #your code go here:
-par = par.lower()
-for i in par:
-    
-    if i != " ":
-        if i in counts:  #wont change structure
-            counts[i] += 1
 
-        if i not in counts:         #will change structure
-            counts[i] = 1
-    
-    
-    
-    
-        
-        print(counts)
+def letter_counter(par):
 
-# loop through it
-#if statement should check if element is in counts. 
-# if its in counts I should sum 1 to it
-# if not otherwise add it to counts. 
+    par = par.replace(" ","")
+    for i in range(len(par)):
+
+        key = par[i]
+
+        key = key.lower()
+
+        if key in counts:
+            counts[key] += 1
+
+        else:
+            counts[key] = 1
+
+    return counts
+
+print(letter_counter(par))
